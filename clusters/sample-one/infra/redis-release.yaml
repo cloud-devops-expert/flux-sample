@@ -12,7 +12,6 @@ spec:
         kind: HelmRepository
         name: redis2
   interval: 1m0s
-  targetNamespace: redis2
+  targetNamespace: redis4
   install:
     createNamespace: true
-
