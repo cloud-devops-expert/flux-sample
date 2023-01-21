@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 2m0s
-  url: https://github.com/huma-engineering/sensyne-app-deployment
+  url: ssh://git@github.com/huma-engineering/sensyne-app-deployment.git
   secretRef:
     name: git-secret
   ref:
