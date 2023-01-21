@@ -1,0 +1,9 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: HelmRepository
+metadata:
+  name: dhos-gdm
+  namespace: flux-system
+spec:
+  interval: 2m0s
+  url: https://github.com/huma-engineering/sensyne-app-deployment/tree/HGDM-5-DevOps-Understand-End-to-End-Flow-of-GDM-Cloud-Environment/api/_by_installation
