@@ -5,7 +5,7 @@ metadata:
   name: dhos-gdm
   namespace: flux-system
 spec:
-  interval: 2m0s
+  interval: 1m0s
   url: https://github.com/huma-engineering/sensyne-app-deployment
   secretRef:
     name: gh-secret
