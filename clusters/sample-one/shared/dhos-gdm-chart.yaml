@@ -6,8 +6,8 @@ metadata:
   namespace: flux-system
 spec:
   interval: 2m0s
-  url: ssh://git@github.com/huma-engineering/sensyne-app-deployment.git
+  url: https://github.com/huma-engineering/sensyne-app-deployment
   secretRef:
-    name: git-secret
+    name: gh-secret
   ref:
     branch: HGDM-5-DevOps-Understand-End-to-End-Flow-of-GDM-Cloud-Environment
