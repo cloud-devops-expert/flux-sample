@@ -19,6 +19,7 @@ spec:
       db_host: xg-uk-nonprod2-01-cluster-db.postgres.database.azure.com
       db_password: test
       db_user_name: postgres
+      log_level: DEBUG
   dependsOn:
     - name:
         kube-prometheus
