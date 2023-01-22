@@ -17,8 +17,6 @@ spec:
   dependsOn:
     - name:
         kube-prometheus
-    - name:
-        values-cm
   interval: 1m0s
   targetNamespace: dhos-medications-api
   install:
