@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: values-cm
+data:
+  values.yaml: |
+    global:
+      image:
+        registry: humagdmacr.azurecr.io
+      image_tag: dev
+      db_host: xg-uk-dev-01-cluster-db.postgres.database.azure.com
+      db_password: test
+      db_user_name: postgres
+      log_level: DEBUG

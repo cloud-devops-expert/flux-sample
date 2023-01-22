@@ -11,18 +11,14 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: dhos-gdm
-  values:
-    global:
-      image:
-        registry: humagdmacr.azurecr.io
-      image_tag: dev
-      db_host: xg-uk-dev-01-cluster-db.postgres.database.azure.com
-      db_password: test
-      db_user_name: postgres
-      log_level: DEBUG
+  valuesFrom:
+    - kind: ConfigMap
+      name: values-cm
   dependsOn:
     - name:
         kube-prometheus
+    - name:
+        values-cm
   interval: 1m0s
   targetNamespace: dhos-medications-api
   install:
