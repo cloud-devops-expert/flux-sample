@@ -4,6 +4,7 @@ namespace: flux-system
 resources:
   - dhos-gdm-chart.yaml
   - dhos-medications-api-release.yaml
+  - dhos-reporting-api-release.yaml
 
 generatorOptions:
   disableNameSuffixHash: true
