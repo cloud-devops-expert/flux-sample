@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: values-cm
-  namespace: dhos-medications-api
+  namespace: flux-system
 data:
   values.yaml: |
     global:
