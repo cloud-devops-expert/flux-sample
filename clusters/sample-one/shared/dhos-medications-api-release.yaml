@@ -11,14 +11,6 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: dhos-gdm
-  values:
-    global:
-      image:
-        registry: humagdmacr.azurecr.io
-      image_tag: dev
-      db_host: xg-uk-nonprod2-01-cluster-db.postgres.database.azure.com
-      db_password: test
-      db_user_name: postgres
   interval: 1m0s
   targetNamespace: dhos-medications-api
   install:
