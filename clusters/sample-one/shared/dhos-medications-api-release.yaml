@@ -7,9 +7,9 @@ metadata:
 spec:
   chart:
     spec:
-      chart: api/_by_installation/dhos-medications-api
+      chart: dhos-medications-api
       sourceRef:
-        kind: GitRepository
+        kind: HelmRepository
         name: dhos-gdm
   interval: 1m0s
   targetNamespace: dhos-medications-api

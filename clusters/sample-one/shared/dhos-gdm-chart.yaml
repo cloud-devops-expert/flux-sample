@@ -1,13 +1,11 @@
 ---
 apiVersion: source.toolkit.fluxcd.io/v1beta2
-kind: GitRepository
+kind: HelmRepository
 metadata:
   name: dhos-gdm
   namespace: flux-system
 spec:
   interval: 1m30s
-  url: https://github.com/huma-engineering/sensyne-app-deployment
+  url: https://github.com/huma-engineering/sensyne-app-deployment/tree/HGDM-5-DevOps-Understand-End-to-End-Flow-of-GDM-Cloud-Environment/charts_to_publish
   secretRef:
     name: gh-secret
-  ref:
-    branch: HGDM-5-DevOps-Understand-End-to-End-Flow-of-GDM-Cloud-Environment
