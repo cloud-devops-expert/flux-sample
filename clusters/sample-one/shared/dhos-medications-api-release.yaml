@@ -8,6 +8,10 @@ spec:
   chart:
     spec:
       chart: dhos-medications-api
+      values:
+        global:
+          image:
+            registry: humagdmacr.azurecr.io
       sourceRef:
         kind: HelmRepository
         name: dhos-gdm
