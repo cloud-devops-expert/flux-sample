@@ -1,0 +1,178 @@
+aadProfile: null
+addonProfiles:
+  azureKeyvaultSecretsProvider:
+    config:
+      enableSecretRotation: 'true'
+      rotationPollInterval: 2m
+    enabled: true
+    identity:
+      clientId: 2d99b870-d2a7-48e4-9d8e-55a0ecf3bde0
+      objectId: d67da8ec-15e4-4ac6-b3a7-f3e2876c05ef
+      resourceId: /subscriptions/88375dd7-9c16-431f-bad1-3a3d300c8c6b/resourcegroups/MC_xg-uk-nonprod2-rg_xg-uk-nonprod2-01-cluster_uksouth/providers/Microsoft.ManagedIdentity/userAssignedIdentities/azurekeyvaultsecretsprovider-xg-uk-nonprod2-01-cluster
+agentPoolProfiles:
+- availabilityZones: null
+  count: 3
+  creationData: null
+  currentOrchestratorVersion: 1.25.4
+  enableAutoScaling: true
+  enableEncryptionAtHost: false
+  enableFips: false
+  enableNodePublicIp: false
+  enableUltraSsd: false
+  gpuInstanceProfile: null
+  hostGroupId: null
+  kubeletConfig: null
+  kubeletDiskType: OS
+  linuxOsConfig: null
+  maxCount: 6
+  maxPods: 30
+  minCount: 3
+  mode: System
+  name: default
+  nodeImageVersion: AKSUbuntu-2204gen2containerd-2022.12.01
+  nodeLabels: null
+  nodePublicIpPrefixId: null
+  nodeTaints: null
+  orchestratorVersion: 1.25.4
+  osDiskSizeGb: 128
+  osDiskType: Managed
+  osSku: Ubuntu
+  osType: Linux
+  podSubnetId: null
+  powerState:
+    code: Running
+  provisioningState: Succeeded
+  proximityPlacementGroupId: null
+  scaleDownMode: Delete
+  scaleSetEvictionPolicy: null
+  scaleSetPriority: null
+  spotMaxPrice: null
+  tags: null
+  type: VirtualMachineScaleSets
+  upgradeSettings:
+    maxSurge: null
+  vmSize: Standard_F4s_v2
+  vnetSubnetId: /subscriptions/88375dd7-9c16-431f-bad1-3a3d300c8c6b/resourceGroups/xg-uk-nonprod2-rg/providers/Microsoft.Network/virtualNetworks/xg-uk-nonprod2-internal-vnet/subnets/xg-uk-nonprod2-01-subnet
+  workloadRuntime: null
+apiServerAccessProfile:
+  authorizedIpRanges:
+  - 161.230.97.195/32
+  disableRunCommand: null
+  enablePrivateCluster: null
+  enablePrivateClusterPublicFqdn: null
+  privateDnsZone: null
+autoScalerProfile:
+  balanceSimilarNodeGroups: 'false'
+  expander: random
+  maxEmptyBulkDelete: '10'
+  maxGracefulTerminationSec: '600'
+  maxNodeProvisionTime: 15m
+  maxTotalUnreadyPercentage: '45'
+  newPodScaleUpDelay: 0s
+  okTotalUnreadyCount: '3'
+  scaleDownDelayAfterAdd: 10m
+  scaleDownDelayAfterDelete: 10s
+  scaleDownDelayAfterFailure: 3m
+  scaleDownUnneededTime: 10m
+  scaleDownUnreadyTime: 20m
+  scaleDownUtilizationThreshold: '0.5'
+  scanInterval: 10s
+  skipNodesWithLocalStorage: 'false'
+  skipNodesWithSystemPods: 'true'
+autoUpgradeProfile:
+  upgradeChannel: none
+azurePortalFqdn: xg-uk-nonprod2-01-dns-82ac97c6.portal.hcp.uksouth.azmk8s.io
+currentKubernetesVersion: 1.25.4
+disableLocalAccounts: false
+diskEncryptionSetId: null
+dnsPrefix: xg-uk-nonprod2-01-dns
+enablePodSecurityPolicy: null
+enableRbac: true
+extendedLocation: null
+fqdn: xg-uk-nonprod2-01-dns-82ac97c6.hcp.uksouth.azmk8s.io
+fqdnSubdomain: null
+httpProxyConfig: null
+id: /subscriptions/88375dd7-9c16-431f-bad1-3a3d300c8c6b/resourcegroups/xg-uk-nonprod2-rg/providers/Microsoft.ContainerService/managedClusters/xg-uk-nonprod2-01-cluster
+identity:
+  principalId: df37dd0b-e083-4035-adb6-96d1fb5e7ee2
+  tenantId: 8b92eb99-dfa2-4bbe-ae8f-d6e66da44d6a
+  type: SystemAssigned
+  userAssignedIdentities: null
+identityProfile:
+  kubeletidentity:
+    clientId: 57937036-7eae-405c-89bc-bd921f6464d7
+    objectId: bbfdffdb-79a5-481c-a054-613615fdd966
+    resourceId: /subscriptions/88375dd7-9c16-431f-bad1-3a3d300c8c6b/resourcegroups/MC_xg-uk-nonprod2-rg_xg-uk-nonprod2-01-cluster_uksouth/providers/Microsoft.ManagedIdentity/userAssignedIdentities/xg-uk-nonprod2-01-cluster-agentpool
+kubernetesVersion: 1.25.4
+linuxProfile: null
+location: uksouth
+maxAgentPools: 100
+name: xg-uk-nonprod2-01-cluster
+networkProfile:
+  dnsServiceIp: 10.0.0.10
+  dockerBridgeCidr: 172.17.0.1/16
+  ipFamilies:
+  - IPv4
+  loadBalancerProfile:
+    allocatedOutboundPorts: null
+    effectiveOutboundIPs:
+    - id: /subscriptions/88375dd7-9c16-431f-bad1-3a3d300c8c6b/resourceGroups/MC_xg-uk-nonprod2-rg_xg-uk-nonprod2-01-cluster_uksouth/providers/Microsoft.Network/publicIPAddresses/6340659a-4ce1-4748-b49e-9e99132c2b2c
+      resourceGroup: MC_xg-uk-nonprod2-rg_xg-uk-nonprod2-01-cluster_uksouth
+    enableMultipleStandardLoadBalancers: null
+    idleTimeoutInMinutes: null
+    managedOutboundIPs:
+      count: 1
+      countIpv6: null
+    outboundIPs: null
+    outboundIpPrefixes: null
+  loadBalancerSku: Standard
+  natGatewayProfile: null
+  networkMode: null
+  networkPlugin: azure
+  networkPolicy: null
+  outboundType: loadBalancer
+  podCidr: null
+  podCidrs: null
+  serviceCidr: 10.0.0.0/16
+  serviceCidrs:
+  - 10.0.0.0/16
+nodeResourceGroup: MC_xg-uk-nonprod2-rg_xg-uk-nonprod2-01-cluster_uksouth
+oidcIssuerProfile:
+  enabled: false
+  issuerUrl: null
+podIdentityProfile: null
+powerState:
+  code: Running
+privateFqdn: null
+privateLinkResources: null
+provisioningState: Succeeded
+publicNetworkAccess: Enabled
+resourceGroup: xg-uk-nonprod2-rg
+securityProfile:
+  azureKeyVaultKms: null
+  defender: null
+servicePrincipalProfile:
+  clientId: msi
+sku:
+  name: Basic
+  tier: Paid
+storageProfile:
+  blobCsiDriver: null
+  diskCsiDriver:
+    enabled: true
+  fileCsiDriver:
+    enabled: true
+  snapshotController:
+    enabled: true
+systemData: null
+tags:
+  environment: uk-nonprod2
+  name_prefix: xg-
+  trustomer: xg-uk-nonprod2-01
+type: Microsoft.ContainerService/ManagedClusters
+windowsProfile:
+  adminPassword: null
+  adminUsername: azureuser
+  enableCsiProxy: true
+  gmsaProfile: null
+  licenseType: null
