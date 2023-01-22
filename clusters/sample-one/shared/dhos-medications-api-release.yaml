@@ -15,6 +15,7 @@ spec:
     global:
       image:
         registry: humagdmacr.azurecr.io
+      image_tag: dev
   interval: 1m0s
   targetNamespace: dhos-medications-api
   install:
